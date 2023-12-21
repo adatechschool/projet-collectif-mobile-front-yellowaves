@@ -2,7 +2,6 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Yellowaves" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
     </style>
 </resources>

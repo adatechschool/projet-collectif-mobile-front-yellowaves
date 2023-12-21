@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
                     Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show()
                 }
-            }, 1000) // 3000 millisecondes (3 secondes)
+            }, 2000) // 3000 millisecondes (3 secondes)
 
             splashVisible = false
         }
