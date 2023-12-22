@@ -34,12 +34,11 @@
         <!-- revoir comment intégrer la police -->
 
         <!-- Le code suivant est commenté car il agrandit étrangement la nav -->
-        <!--<com.google.android.material.appbar.MaterialToolbar
+        <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize" />-->
+            android:layout_height="?attr/actionBarSize" />
 
-        <!-- Ici, on peut définir la couleur du texte -->
 
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -54,6 +53,6 @@
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
         app:srcCompat="@android:drawable/ic_dialog_email"
-        /> -->
+        />-->
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
