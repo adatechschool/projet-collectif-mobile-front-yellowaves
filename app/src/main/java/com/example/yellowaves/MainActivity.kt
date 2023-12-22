@@ -33,16 +33,16 @@ class MainActivity : AppCompatActivity() {
                 binding = ActivityMainBinding.inflate(layoutInflater)
                 setContentView(binding.root)
 
-                setSupportActionBar(binding.toolbar)
+                // setSupportActionBar(binding.toolbar) -> code commenté car j'ai commenté aussi la partie dans activity_main.xml
 
                 val navController = findNavController(R.id.nav_host_fragment_content_main)
                 appBarConfiguration = AppBarConfiguration(navController.graph)
                 setupActionBarWithNavController(navController, appBarConfiguration)
 
-                binding.fab.setOnClickListener { view ->
-                    Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show()
-                }
+                //binding.fab.setOnClickListener { view ->
+                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                //        .setAction("Action", null).show()
+                //} -> code commenté commme la ligne 36
             }, 2000) // 2000 millisecondes (2 secondes)
 
             splashVisible = false
