@@ -33,13 +33,14 @@ class MainActivity : AppCompatActivity() {
                 binding = ActivityMainBinding.inflate(layoutInflater)
                 setContentView(binding.root)
 
-                // CE CODE CONTIENT LA FLECHE DE NAVIGATION RETOUR
+                // CE CODE CONTIENT LE TITRE EN NOIR
                 //setSupportActionBar(binding.toolbar)
+                // CE CODE CONTIENT LA FLECHE DE NAVIGATION RETOUR
                 //val navController = findNavController(R.id.nav_host_fragment_content_main)
                 //appBarConfiguration = AppBarConfiguration(navController.graph)
                 //setupActionBarWithNavController(navController, appBarConfiguration)
 
-                // CE CODE CONTIENT LE BOUTON D'ENVELOPPE EN BAS A DROITE 
+                // CE CODE CONTIENT LE BOUTON D'ENVELOPPE EN BAS A DROITE
                 //binding.fab.setOnClickListener { view ->
                 //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                  //       .setAction("Action", null).show()
