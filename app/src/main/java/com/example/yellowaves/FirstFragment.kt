@@ -14,7 +14,7 @@ import com.example.yellowaves.databinding.FragmentFirstBinding
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
 class FirstFragment : Fragment() {
-    
+
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
