@@ -7,10 +7,13 @@
     <string name="next">Voir la destination</string>
     <string name="previous">&lt;</string>
     <string name="lorem_ipsum">Bienvenue sur Yellowaves !</string>
-    <string name="ville">
-        Nice
-    </string>
-    <string name="lieu">
-        Promenade des Anglais
-    </string>
+    <string name="ville">Ville</string>
+    <string name="lieu">Nom du lieu</string>
+    <string name="start">Début de saison:</string>
+    <string name="end">Fin de saison:</string>
+    <string name="difficulty">Difficulté:</string>
+    <string name="break_type">Type de vagues:</string>
+
+
+
 </resources>

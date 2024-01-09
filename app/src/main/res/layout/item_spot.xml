@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_weight="0"
-            android:text="Nice" />
+            android:text="@string/ville" />
 
         <View
             android:layout_width="0dp"
@@ -30,7 +30,7 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Promenade des anglais" />
+            android:text="@string/lieu" />
     </LinearLayout>
 
     <ImageView
