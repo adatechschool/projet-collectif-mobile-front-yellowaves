@@ -45,7 +45,7 @@
             android:layout_centerInParent="true"
             android:layout_marginTop="30dp"
             android:contentDescription="Plage de nice"
-            android:src="@drawable/image_plage"
+            android:src="@drawable/imageplage"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"

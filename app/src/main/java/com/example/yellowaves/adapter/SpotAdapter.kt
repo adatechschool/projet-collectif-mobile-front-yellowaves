@@ -22,7 +22,6 @@ class SpotAdapter : RecyclerView.Adapter<SpotAdapter.ViewHolder>(){
         return ViewHolder(view)
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        TODO("Not yet implemented")
     }
     override fun getItemCount(): Int = 5
 
