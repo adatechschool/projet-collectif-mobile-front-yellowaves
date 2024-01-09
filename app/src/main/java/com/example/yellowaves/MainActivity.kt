@@ -30,8 +30,7 @@ class MainActivity : AppCompatActivity() {
 
             Handler(Looper.getMainLooper()).postDelayed({
                 // Le reste du code de la MainActivity
-                binding = ActivityMainBinding.inflate(layoutInflater)
-                setContentView(binding.root)
+                setContentView(R.layout.activity_main)
 
                 // CE CODE CONTIENT LE TITRE EN NOIR
                 //setSupportActionBar(binding.toolbar)
