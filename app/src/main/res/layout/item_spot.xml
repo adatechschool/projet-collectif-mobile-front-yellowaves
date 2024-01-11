@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,20 +33,19 @@
             android:text="@string/lieu" />
     </LinearLayout>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewSpot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="15dp">
     <ImageView
         android:id="@+id/image_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:contentDescription="plage de nice"
         android:src="@drawable/imageplage" />
+    </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Details du spot"
-        app:backgroundTint="#FED800"
-        android:onClick="onClick"
-        />
 
 </LinearLayout>
