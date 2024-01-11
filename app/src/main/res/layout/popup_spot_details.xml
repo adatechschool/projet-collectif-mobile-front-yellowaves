@@ -1,0 +1,73 @@
+<!-- res/layout/activity_product_detail.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="500dp"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/imageViewSpot"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/imageplage"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewSpotAdresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewSpot"
+        android:layout_marginTop="16dp"
+        android:text="C'est le nom de la playa quoi"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewSpotLieu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSpotAdresse"
+        android:layout_marginTop="8dp"
+        android:text="Ville ou Pays (comme le jambon)"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textViewSpotStartSeason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSpotLieu"
+        android:layout_marginTop="8dp"
+        android:text="Début de la sais mon reuf"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewSpotEndSeason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSpotStartSeason"
+        android:layout_marginTop="8dp"
+        android:text="Fin de la 16 mon reuf"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewSpotBreakType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSpotEndSeason"
+        android:layout_marginTop="8dp"
+        android:text="Type de vague"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textViewSpotDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSpotBreakType"
+        android:layout_marginTop="8dp"
+        android:text="Difficulté du spot frerot"
+        android:textSize="16sp"/>
+    <!-- Ajoutez d'autres éléments selon vos besoins -->
+
+</RelativeLayout>
