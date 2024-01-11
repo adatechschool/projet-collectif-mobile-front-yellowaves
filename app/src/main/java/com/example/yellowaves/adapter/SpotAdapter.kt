@@ -11,15 +11,16 @@ import com.bumptech.glide.Glide
 import com.example.yellowaves.MainActivity
 import com.example.yellowaves.R
 import com.example.yellowaves.SpotModel
+import com.example.yellowaves.SpotPopup
 
 
 class SpotAdapter(
-    private val context: MainActivity,
+    val context: MainActivity,
     private val spotList: List<SpotModel>,
     private val layoutId: Int,
-) : RecyclerView.Adapter<SpotAdapter.ViewHolder>(){
+) : RecyclerView.Adapter<SpotAdapter.ViewHolder>() {
     // boite pour ranger tout les composants à controler
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         // image de la plage
         val spotImage = view.findViewById<ImageView>(R.id.image_item)
         val spotName = view.findViewById<TextView>(R.id.lieu_item)
@@ -32,6 +33,7 @@ class SpotAdapter(
             .inflate(R.layout.item_spot, parent, false)
         return ViewHolder(view)
     }
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         // récupérer les infos des spots
         val currentSpot = spotList[position]
@@ -44,7 +46,14 @@ class SpotAdapter(
 
         //mettre à jour l'adresse
         holder.spotLocation.text = currentSpot.adresse
+
+        // interaction lors du clic sur un spot
+        holder.itemView.setOnClickListener {
+            //afficher le popup
+            SpotPopup(this, currentSpot).show()
+        }
     }
+
     override fun getItemCount(): Int = spotList.size
 
 
