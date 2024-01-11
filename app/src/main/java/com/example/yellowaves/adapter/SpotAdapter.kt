@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.yellowaves.MainActivity
@@ -21,6 +22,8 @@ class SpotAdapter(
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
         // image de la plage
         val spotImage = view.findViewById<ImageView>(R.id.image_item)
+        val spotName = view.findViewById<TextView>(R.id.lieu_item)
+        val spotLocation = view.findViewById<TextView>(R.id.adresse_item)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -35,6 +38,12 @@ class SpotAdapter(
 
         //utiliser Glide pour utiliser l'image à partir de son lien -> composant
         Glide.with(context).load(Uri.parse(currentSpot.image)).into(holder.spotImage)
+
+        //mettre à jour le nom du lieu
+        holder.spotName.text = currentSpot.lieu
+
+        //mettre à jour l'adresse
+        holder.spotLocation.text = currentSpot.adresse
     }
     override fun getItemCount(): Int = spotList.size
 
