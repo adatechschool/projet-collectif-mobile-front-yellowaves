@@ -36,7 +36,7 @@
     <ImageView
         android:id="@+id/image_item"
         android:layout_width="match_parent"
-        android:layout_height="304dp"
+        android:layout_height="wrap_content"
         android:contentDescription="plage de nice"
         android:src="@drawable/imageplage" />
 
