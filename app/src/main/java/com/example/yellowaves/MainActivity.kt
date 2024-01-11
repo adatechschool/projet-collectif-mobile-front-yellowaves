@@ -32,18 +32,11 @@ class MainActivity : AppCompatActivity() {
                 // Le reste du code de la MainActivity
                 setContentView(R.layout.activity_main)
 
-                // CE CODE CONTIENT LE TITRE EN NOIR
-                //setSupportActionBar(binding.toolbar)
-                // CE CODE CONTIENT LA FLECHE DE NAVIGATION RETOUR
-                //val navController = findNavController(R.id.nav_host_fragment_content_main)
-                //appBarConfiguration = AppBarConfiguration(navController.graph)
-                //setupActionBarWithNavController(navController, appBarConfiguration)
-
-                // CE CODE CONTIENT LE BOUTON D'ENVELOPPE EN BAS A DROITE
-                //binding.fab.setOnClickListener { view ->
-                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                 //       .setAction("Action", null).show()
-                //}
+                //injecter le fragment dans notre boite (fragment_container)
+                val transaction = supportFragmentManager.beginTransaction()
+                transaction.replace(R.id.fragment_container, FirstFragment(this))
+                transaction.addToBackStack(null)
+                transaction.commit()
             }, 2000) // 2000 millisecondes (2 secondes)
 
             splashVisible = false
@@ -63,7 +56,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
+        val navController = findNavController(R.id.fragment_container)
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
     }
