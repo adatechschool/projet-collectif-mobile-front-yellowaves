@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingBottom="25dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,6 +16,7 @@
 
         <TextView
             android:id="@+id/lieu_item"
+            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
@@ -28,6 +30,7 @@
 
         <TextView
             android:id="@+id/adresse_item"
+            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/lieu" />
@@ -43,8 +46,15 @@
         android:id="@+id/image_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="plage de nice"
-        android:src="@drawable/imageplage" />
+        android:src="@drawable/imageplage"
+        android:contentDescription="photo du spot de surf"/>
+        <ImageView
+            android:id="@+id/image_loupe"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/loupe"
+            android:contentDescription="loupe, toucher pour agrandir"/>
     </androidx.cardview.widget.CardView>
 
 
