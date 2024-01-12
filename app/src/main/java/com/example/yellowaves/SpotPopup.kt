@@ -14,11 +14,24 @@ class SpotPopup(
     private val currentSpot: SpotModel
 ) : Dialog(adapter.context) {
 
+    init {
+        // Empêcher la fermeture en touchant à l'extérieur du dialogue
+        setCanceledOnTouchOutside(false)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(R.layout.popup_spot_details)
         setupComponents()
+        setupCloseButton()
+    }
+
+    private fun setupCloseButton() {
+        findViewById<ImageView>(R.id.cardViewClose).setOnClickListener{
+            // fermer la fenêtre popup
+            dismiss()
+        }
     }
 
     private fun setupComponents() {
