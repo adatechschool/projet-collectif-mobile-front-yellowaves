@@ -60,8 +60,10 @@ class FirstFragment(
 
                 for (i in 0 until jsonArray.length()) {
                     val record = jsonArray.getJSONObject(i).getJSONObject("fields")
+                    val photos = record.getJSONArray("Photos")
+                    val url = photos.getJSONObject(0).getString("url")
+                    Log.i("VotreTag3", "Contenu JSON : ${url}")
 
-                    Log.i("VotreTag3", "Contenu JSON : ${record.Photos.full.getString("url")}")
 
                     //Log.i("VotreTag4", "Contenu JSON : "https:/\/www.tourismelandes.com/wp-content/uploads/wpetourisme/la-nord-4-2-800x530.jpg"),
 
@@ -69,7 +71,7 @@ class FirstFragment(
                     spotList.add(
                         SpotModel(
                             adresse = record.getString("Destination"),
-                            image = record.getString("url"),
+                            image = url,
                             lieu = record.getString("Address"),
                             startSeason = record.getString("Peak Surf Season Begins"),
                             endSeason = record.getString("Peak Surf Season Ends"),
