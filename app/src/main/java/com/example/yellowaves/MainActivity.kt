@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
+
         // Ajout de la logique pour l'écran de démarrage
         if (splashVisible) {
             setContentView(R.layout.launcher)
