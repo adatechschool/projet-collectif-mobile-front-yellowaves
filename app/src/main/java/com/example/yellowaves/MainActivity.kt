@@ -17,8 +17,6 @@ import com.example.yellowaves.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
-    private lateinit var binding: ActivityMainBinding
     private var splashVisible = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
