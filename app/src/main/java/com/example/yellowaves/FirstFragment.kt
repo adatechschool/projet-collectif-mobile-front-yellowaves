@@ -60,26 +60,16 @@ class FirstFragment(
 
                 for (i in 0 until jsonArray.length()) {
                     val record = jsonArray.getJSONObject(i).getJSONObject("fields")
-                    Log.i("VotreTag1", "Contenu JSON : ${record}")
-                    Log.i("VotreTag2", "Contenu JSON : ${record.getString("Destination")}")
-                    //Log.i("VotreTag3", "Contenu JSON : ${record.getString("Image")}")
-                    Log.i("VotreTag3", "Contenu JSON : ${record.getString("Address")}")
+
+                    Log.i("VotreTag3", "Contenu JSON : ${record.Photos.full.getString("url")}")
+
                     //Log.i("VotreTag4", "Contenu JSON : "https:/\/www.tourismelandes.com/wp-content/uploads/wpetourisme/la-nord-4-2-800x530.jpg"),
-                    Log.i(
-                        "VotreTag5",
-                        "Contenu JSON : ${record.getString("Peak Surf Season Begins")}"
-                    )
-                    Log.i(
-                        "VotreTag6",
-                        "Contenu JSON : ${record.getString("Peak Surf Season Ends")}"
-                    )
-                    Log.i("VotreTag7", "Contenu JSON : ${record.getString("Surf Break")}")
-                    Log.i("VotreTag8", "Contenu JSON : ${record.getString("Difficulty Level")}")
+
 
                     spotList.add(
                         SpotModel(
                             adresse = record.getString("Destination"),
-                            image = "https://ca-times.brightspotcdn.com/dims4/default/07dad63/2147483647/strip/true/crop/6000x4000+0+0/resize/1200x800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fd3%2Fec%2Fb1a6431b4f73b3f7ebc76c5a69fd%2Frsp-0927.jpg",
+                            image = record.getString("url"),
                             lieu = record.getString("Address"),
                             startSeason = record.getString("Peak Surf Season Begins"),
                             endSeason = record.getString("Peak Surf Season Ends"),
