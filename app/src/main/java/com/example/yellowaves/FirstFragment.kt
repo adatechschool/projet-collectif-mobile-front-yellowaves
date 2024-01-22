@@ -64,9 +64,7 @@ class FirstFragment(
                     val url = photos.getJSONObject(0).getString("url")
                     Log.i("VotreTag3", "Contenu JSON : ${url}")
 
-
-                    //Log.i("VotreTag4", "Contenu JSON : "https:/\/www.tourismelandes.com/wp-content/uploads/wpetourisme/la-nord-4-2-800x530.jpg"),
-
+                    val breakType = record.getJSONArray("Surf Break").getString(0)
 
                     spotList.add(
                         SpotModel(
@@ -75,7 +73,7 @@ class FirstFragment(
                             lieu = record.getString("Address"),
                             startSeason = record.getString("Peak Surf Season Begins"),
                             endSeason = record.getString("Peak Surf Season Ends"),
-                            breakType = record.getString("Surf Break"),
+                            breakType = breakType,
                             difficulty = record.getInt("Difficulty Level")
                         )
                     )
