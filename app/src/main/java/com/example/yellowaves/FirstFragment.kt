@@ -45,7 +45,7 @@ class FirstFragment(
         // ...
 
         GlobalScope.launch(Dispatchers.IO) {
-            val apiUrl = "http://localhost:8080/spots"
+            val apiUrl = "http://10.0.2.2:8080/spots"
 
             try {
                 val jsonString = URL(apiUrl)
@@ -54,8 +54,9 @@ class FirstFragment(
                     .bufferedReader()
                     .use { it.readText() }
 
-                val jsonArray = JSONArray(jsonString)
+                Log.i("test", "${jsonString}")
 
+                val jsonArray = JSONArray(jsonString)
                 for (i in 0 until jsonArray.length()) {
                     val spotJson = jsonArray.getJSONObject(i)
 
