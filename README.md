@@ -35,3 +35,6 @@ Bienvenue dans le frontend de notre projet collectif, développé en Kotlin avec
 4. Attendez que l'application soit installée et exécutée sur votre appareil ou émulateur.
 
 Félicitations ! Vous devriez maintenant voir l'application en cours d'exécution sur votre appareil Android.
+
+[<img src="(https://media1.tenor.com/m/yUrIeVC7I_EAAAAC/brice-de-nice-jean-dujardin.gif)]
+
