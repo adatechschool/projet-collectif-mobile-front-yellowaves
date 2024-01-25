@@ -43,8 +43,6 @@ class FirstFragment(
                     .bufferedReader()
                     .use { it.readText() }
 
-                Log.i("test", "${jsonString}")
-
                 val jsonArray = JSONArray(jsonString)
                 for (i in 0 until jsonArray.length()) {
                     val spotJson = jsonArray.getJSONObject(i)
