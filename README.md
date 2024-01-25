@@ -36,5 +36,6 @@ Bienvenue dans le frontend de notre projet collectif, développé en Kotlin avec
 
 Félicitations ! Vous devriez maintenant voir l'application en cours d'exécution sur votre appareil Android.
 
-[<img src="(https://media1.tenor.com/m/yUrIeVC7I_EAAAAC/brice-de-nice-jean-dujardin.gif)]
+[<img src="https://media1.tenor.com/m/yUrIeVC7I_EAAAAC/brice-de-nice-jean-dujardin.gif" width="30">
+
 
