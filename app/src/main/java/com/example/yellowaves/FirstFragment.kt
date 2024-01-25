@@ -7,10 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
-
 import com.example.yellowaves.adapter.SpotAdapter
 import com.example.yellowaves.databinding.FragmentFirstBinding
-//import com.squareup.picasso.Picasso
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -21,10 +19,6 @@ import java.net.URL
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 
-
-/**
- * A simple [Fragment] subclass as the default destination in the navigation.
- */
 class FirstFragment(
     private val context: MainActivity
 ) : Fragment() {
@@ -35,14 +29,9 @@ class FirstFragment(
         val view = inflater?.inflate(
             R.layout.fragment_first, container, false
         )
-//        // Création d'une liste qui stock les spots de surfs
+        // Création d'une liste qui stock les spots de surfs
         val spotList = arrayListOf<SpotModel>()
         // Récupération des données depuis Airtableç
-//        val client = OkHttpClient()
-//
-//        val request = Request.Builder()
-
-        // ...
 
         GlobalScope.launch(Dispatchers.IO) {
             val apiUrl = "http://10.0.2.2:8080/spots"

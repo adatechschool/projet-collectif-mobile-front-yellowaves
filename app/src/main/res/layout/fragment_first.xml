@@ -22,14 +22,15 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/vertical_recycler_view"
-            android:layout_width="372dp"
-            android:layout_height="838dp"
-            android:layout_marginTop="52dp"
+            android:layout_width="378dp"
+            android:layout_height="827dp"
+            android:layout_marginTop="10dp"
             android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/textview_first" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
